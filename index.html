@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SplitIt - Add Expense</title>
+    <link rel="stylesheet" href="css/expenseForm.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Add Expense</a></li>
+        <li><a href="pages/ExpenseList.html">View Expenses</a></li>
+        <li><a href="pages/SummaryDisplay.html">Summary</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h1>Add Expense</h1>
+      <form id="expenseForm">
+        <label for="payer">Payer:</label>
+        <input
+          type="text"
+          id="payer"
+          name="payer"
+          placeholder="Enter payer name"
+          required
+        />
+
+        <label for="amount">Amount:</label>
+        <input
+          type="number"
+          id="amount"
+          min="0"
+          name="amount"
+          placeholder="Enter amount"
+          required
+        />
+
+        <label for="description">Description:</label>
+        <input
+          type="text"
+          id="description"
+          name="description"
+          placeholder="Enter description"
+        />
+
+        <button type="submit" id="addExpenseButton">Add Expense</button>
+      </form>
+    </div>
+    <script type="module" src="js/expenseForm.js"></script>
+  </body>
+</html>

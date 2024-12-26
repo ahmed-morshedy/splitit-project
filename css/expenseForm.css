@@ -1,0 +1,46 @@
+/* expenseForm.css */
+body {
+  background-color: #f1f8e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#addExpenseButton {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addExpenseButton:hover {
+  background-color: #2e7d32;
+}
